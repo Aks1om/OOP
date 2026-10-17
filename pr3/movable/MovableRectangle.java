@@ -9,20 +9,10 @@ public class MovableRectangle implements Movable {
         bottomRight = new MovablePoint(x2, y2, xSpeed, ySpeed);
     }
 
-    private void move(String direction) {
-        switch (direction) {
-            case "up": topLeft.moveUp(); bottomRight.moveUp(); break;
-            case "down": topLeft.moveDown(); bottomRight.moveDown(); break;
-            case "left": topLeft.moveLeft(); bottomRight.moveLeft(); break;
-            case "right": topLeft.moveRight(); bottomRight.moveRight(); break;
-            default: throw new IllegalArgumentException("Unknown direction: " + direction);
-        }
-    }
-
-    public void moveUp() { move("up"); }
-    public void moveDown() { move("down"); }
-    public void moveLeft() { move("left"); }
-    public void moveRight() { move("right"); }
+    public void moveUp() { topLeft.moveUp(); bottomRight.moveUp(); }
+    public void moveDown() { topLeft.moveDown(); bottomRight.moveDown(); }
+    public void moveLeft() { topLeft.moveLeft(); bottomRight.moveLeft(); }
+    public void moveRight() { topLeft.moveRight(); bottomRight.moveRight(); }
 
     public boolean hasSameSpeed() {
         return topLeft.getXSpeed() == bottomRight.getXSpeed()
