@@ -4,13 +4,13 @@ public class Main {
 
     private static void printFavoriteSeason(Season season) {
         if (season == Season.WINTER) {
-            System.out.println("зима");
+            System.out.println("Я люблю зиму");
         } else if (season == Season.SPRING) {
-            System.out.println("весна");
+            System.out.println("Я люблю весну");
         } else if (season == Season.SUMMER) {
-            System.out.println("лето");
+            System.out.println("Я люблю лето");
         } else if (season == Season.AUTUMN) {
-            System.out.println("осень");
+            System.out.println("Я люблю осень");
         }
     }
 
