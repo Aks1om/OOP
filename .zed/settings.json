@@ -1,0 +1,9 @@
+{
+  "languages": {
+    "Java": {
+      "gutter": {
+        "runnables": true
+      }
+    }
+  }
+}
